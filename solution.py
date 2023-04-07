@@ -11,7 +11,7 @@ def solution(p: float, x: np.array) -> tuple:
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
     alpha = 1 - p
-    m = x.maximum()/2
-    sq = pow(alpha, 1/np.len(x))
+    m = x.max()/2
+    sq = pow(alpha, 1/np.size(x))
     return m + 0.007, \
            m/sq + 0.007
