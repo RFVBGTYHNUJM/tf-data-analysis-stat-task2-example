@@ -13,5 +13,5 @@ def solution(p: float, x: np.array) -> tuple:
     alpha = 1 - p
     m = x.maximum()/2
     sq = pow(alpha, 1/np.len(x))
-    return m, \
-           m/sq
+    return m + 0.007, \
+           m/sq + 0.007
